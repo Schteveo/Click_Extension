@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Timed button click",
+    "version": "1.0",
+    "icons": {
+      "16": "images/click.png",
+      "32": "images/click.png",
+      "48": "images/click.png",
+      "128": "images/click.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+        "https://*/*",
+        "file:///*"
+    ]
+  }

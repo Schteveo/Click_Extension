@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+    <script src="./countdown.js"></script>
+    <script src="./popup.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Timed Button Click</h1>
+    <table>
+        <tr>        
+            <th>button:</th>
+            <th>time:</th>
+        </tr>
+        <tr>
+            <td>
+                <select id="select_button">
+                    <option value="id">ID</option>
+                    <option value="class">class</option>
+                </select>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="button_class"></td>
+            <td><input id="time" pattern="[0-9]{2}:[0-9]{2}" placeholder="hh:mm"></td>
+        </tr>
+    </table>
+
+    <div class="center">
+        <p id="demo"></p>
+    </div>
+
+    <button>Apply</button>
+  </body>
+</html>
