@@ -3,8 +3,8 @@ const button = document.querySelector("button");
 button.addEventListener("click", async () => {
     let tabId = await getCurrentTab();
     let time = document.getElementById("time").value;
-    let button_class = document.getElementById("button_class").value;
-    let id_bool = document.getElementById("select_button").value == "id";
+    //let button_class = document.getElementById("button_class").value;
+    //let id_bool = document.getElementById("select_button").value == "id";
     let reload = document.getElementById("checkbox").checked;
 
     time = time.split(":");
@@ -43,7 +43,7 @@ button.addEventListener("click", async () => {
             }
         );
         //clearInterval(interval);
-    }, 1000);
+    }, 500);
 
 });
 
@@ -75,7 +75,7 @@ const executeButtonClick = () => {
             matchingElement_input.click();
             alert(matchingElement_input)
         }*/
-        let warenkorb = document.querySelector("[title='In den Warenkorb']");
+        let warenkorb = document.querySelector("[data-objecttable='local_shopping_cart']");
         if(warenkorb){
             warenkorb.click();
             //alert(true);
