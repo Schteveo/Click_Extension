@@ -43,7 +43,7 @@ button.addEventListener("click", async () => {
             }
         );
         //clearInterval(interval);
-    }, 500);
+    }, 1000);
 
 });
 
